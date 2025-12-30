@@ -26,3 +26,15 @@ This project investigates the neural mechanisms of **response inhibition** using
 *   **CONN Toolbox** (Functional Connectivity)
 *   **Python** (Pandas for behavioral logs, Nilearn for plotting)
 
+
+---
+## Full Preprocessing Pipeline
+**File:** `fMRI_Preprocessing_Pipeline.ipynb`
+
+This module implements a raw-to-analyzed preprocessing workflow using **Nilearn** and **NiBabel**:
+1.  **Motion Correction:** Realignment to the first volume to correct for subject movement.
+2.  **Slice-Timing:** Temporal alignment to the middle slice.
+3.  **Normalization:** Spatial transformation of T1w and BOLD images to **MNI Space**.
+4.  **Smoothing:** Applied 8mm FWHM Gaussian kernel to improve SNR.
+
+
